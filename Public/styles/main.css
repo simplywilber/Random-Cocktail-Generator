@@ -1,0 +1,84 @@
+html{
+    margin: 8px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Work Sans, sans-serif;
+}
+.container{
+    display: flex;
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid white 0.5px;
+}
+.footer{
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid white 0.5px;
+    font-size: 10px;
+}
+#logoText{
+    font-family: El Messiri, cursive;
+    font-size: 60px;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#logoTextFooter{
+    font-family: El Messiri, cursive;
+}
+
+.card{
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#homeImg{
+    box-shadow:0px 0px 60px 10px rgba(255, 255, 255, 0.303);
+    transition: 0.4s;
+    border-radius: 25px;
+}
+#homeImg:hover{
+    box-shadow:0px 0px 100px 10px white;
+    transition: 0.4s;
+}
+#homeImageLabel{
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+}
+#image{
+    box-shadow:0px 0px 60px 10px rgba(255, 255, 255, 0.303);
+    transition: 0.4s;
+    border-radius: 25px;
+}
+#image:hover{
+    box-shadow:0px 0px 100px 10px white;
+    transition: 0.4s;
+}
+.entireDrinkCard{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#descriptionText{
+    margin-left: 45px;
+}
+.ingredientsList{
+    list-style-type: circle;
+}
+#imageLabel{
+    text-align: center;
+    position: relative;
+    left: 125px;
+    bottom: 50px;
+}

@@ -1,0 +1,31 @@
+<%- include("Partials/header.ejs") %>
+
+<body>
+    <div class="container entireDrinkCard">
+        <div id="image">
+            
+            <a href="/generated"><img src=<%= image %> height="500px" width="500px" alt="drink-image"></a>
+        </div>
+        <div id="descriptionText">
+            <h1> <%= Name %> (<%= Glass %>) </h1>  
+            <h2> <%= AlcoholType %></h2>
+            <p> Ingredients: </p>
+            <ol class="ingredientsList"> 
+                <% for(let i=1;i<=15;i++) { %>
+                    <% let ingredient = data[`strIngredient${i}`] %>
+                    <% let measurement = data[`strMeasure${i}`] %>
+                    <% if(ingredient !== null && measurement !== null){ %>
+                        <li>(<%= measurement %>) <%=ingredient%> </li>
+                    <%} %>
+                <%} %>
+            </ol>
+            <p> Instructions: </p>
+            <p> <%= Instructions %> </p> 
+        </div>
+    </div>       
+     <label id="imageLabel">/ CLICK IMAGE TO REFRESH /</label>
+
+</body>
+
+
+<%- include("Partials/footer.ejs") %>
